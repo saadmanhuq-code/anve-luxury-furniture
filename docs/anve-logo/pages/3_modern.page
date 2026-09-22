@@ -1,0 +1,69 @@
+pageType: content
+background:
+  type: solid
+  color: "$greige"
+elements:
+  - elementId: label
+    elementType: text
+    bounds: [90, 84, 500, 24]
+    content:
+      fontSize: 15
+      fontFamily: Jost
+      letterSpacing: 4
+      color: "#6E675C"
+      wrap: false
+      align: [left, middle]
+      text: CONCEPT 03 — MODERN ACCENT
+  - elementId: block
+    elementType: shape
+    bounds: [72, 296, 26, 26]
+    shapeName: rect
+    fill: {type: solid, color: "$terra"}
+  - elementId: wordmark
+    elementType: text
+    bounds: [66, 330, 960, 220]
+    content:
+      fontSize: 190
+      fontFamily: Archivo Black
+      letterSpacing: 2
+      wrap: false
+      align: [left, middle]
+      text: |
+        <p><span style="color:$ink">ANV</span><span style="color:$terra">É</span></p>
+  - elementId: underline
+    elementType: shape
+    bounds: [74, 572, 120, 10]
+    shapeName: rect
+    fill: {type: solid, color: "$terra"}
+  - elementId: sub
+    elementType: text
+    bounds: [70, 612, 700, 44]
+    content:
+      fontSize: 30
+      fontFamily: Jost
+      letterSpacing: 16
+      color: "$ink"
+      wrap: false
+      align: [left, middle]
+      text: DESIGNS
+  - elementId: sub2
+    elementType: text
+    bounds: [72, 664, 700, 24]
+    content:
+      fontSize: 15
+      fontFamily: Jost
+      letterSpacing: 5
+      color: "#6E675C"
+      wrap: false
+      align: [left, middle]
+      text: FURNITURE & INTERIOR STUDIO
+  - elementId: hairline
+    elementType: shape
+    bounds: [1000, 320, 1, 360]
+    shapeName: rect
+    fill: {type: solid, color: "#1C1A1740"}
+  - elementId: side-diamond
+    elementType: shape
+    bounds: [994, 700, 13, 13]
+    shapeName: diamond
+    fill: {type: solid, color: "$terra"}

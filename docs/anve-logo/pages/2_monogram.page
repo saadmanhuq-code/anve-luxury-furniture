@@ -1,0 +1,65 @@
+pageType: content
+background:
+  type: solid
+  color: "$ink"
+elements:
+  - elementId: label
+    elementType: text
+    bounds: [90, 84, 500, 24]
+    content:
+      fontSize: 15
+      fontFamily: Jost
+      letterSpacing: 4
+      color: "#9A917F"
+      wrap: false
+      align: [left, middle]
+      text: CONCEPT 02 — THE MONOGRAM
+  - elementId: circle-outer
+    elementType: shape
+    bounds: [330, 270, 420, 420]
+    shapeName: ellipse
+    border: {style: solid, width: 1.5, color: "$brass"}
+  - elementId: circle-inner
+    elementType: shape
+    bounds: [352, 292, 376, 376]
+    shapeName: ellipse
+    border: {style: solid, width: 0.75, color: "#A9854866"}
+  - elementId: mark-a
+    elementType: shape
+    bounds: [455, 395, 170, 170]
+    shapeName: custom
+    viewBox: [200, 200]
+    path: "M100,20 L185,180 L158,180 L100,62 L42,180 L15,180 Z M58,128 L142,128 L142,142 L58,142 Z"
+    fill: {type: solid, color: "$brass"}
+  - elementId: diamond-left
+    elementType: shape
+    bounds: [375, 763, 10, 10]
+    shapeName: diamond
+    fill: {type: solid, color: "$brass"}
+  - elementId: diamond-right
+    elementType: shape
+    bounds: [695, 763, 10, 10]
+    shapeName: diamond
+    fill: {type: solid, color: "$brass"}
+  - elementId: wordmark
+    elementType: text
+    bounds: [240, 740, 600, 56]
+    content:
+      fontSize: 40
+      fontFamily: Marcellus
+      letterSpacing: 8
+      color: "$cream"
+      wrap: false
+      align: [center, middle]
+      text: ANVÉ
+  - elementId: sub
+    elementType: text
+    bounds: [240, 802, 600, 26]
+    content:
+      fontSize: 16
+      fontFamily: Jost
+      letterSpacing: 10
+      color: "$brass"
+      wrap: false
+      align: [center, middle]
+      text: DESIGNS

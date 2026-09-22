@@ -1,0 +1,33 @@
+pageType: content
+background:
+  type: solid
+  color: "$cream"
+elements:
+  - elementId: frame
+    elementType: shape
+    bounds: [48, 48, 984, 984]
+    shapeName: rect
+    border: {style: solid, width: 1, color: "$brass"}
+  - elementId: label
+    elementType: text
+    bounds: [90, 84, 500, 24]
+    content:
+      fontSize: 15
+      fontFamily: Jost
+      letterSpacing: 4
+      color: "$muted"
+      wrap: false
+      align: [left, middle]
+      text: CONCEPT 01 — HERITAGE SERIF
+  - elementId: logo-original
+    elementType: image
+    bounds: [200, 351, 680, 381]
+    src: media/anve-logo-original.png
+    fit: {mode: contain}
+  - elementId: e-acute-accent
+    elementType: shape
+    bounds: [736, 320, 36, 24]
+    shapeName: custom
+    viewBox: [80, 52]
+    path: "M6,52 L52,0 L74,0 L28,52 Z"
+    fill: {type: solid, color: "#4A4239"}

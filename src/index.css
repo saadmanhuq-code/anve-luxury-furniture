@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 94%;        /* cream */
+    --foreground: 36 12% 10%;        /* ink */
+    --card: 40 33% 94%;
+    --card-foreground: 36 12% 10%;
+    --popover: 40 33% 94%;
+    --popover-foreground: 36 12% 10%;
+    --primary: 38 39% 47%;           /* brass */
+    --primary-foreground: 40 33% 94%;
+    --secondary: 34 25% 89%;
+    --secondary-foreground: 36 12% 10%;
+    --muted: 34 18% 86%;
+    --muted-foreground: 42 9% 51%;   /* fawn */
+    --accent: 34 25% 89%;
+    --accent-foreground: 36 12% 10%;
+    --destructive: 12 48% 52%;
+    --destructive-foreground: 40 33% 94%;
+    --border: 36 12% 10%;
+    --input: 36 12% 10%;
+    --ring: 38 39% 47%;
+    --radius: 0px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: hidden; }
+
+  body {
+    @apply bg-cream text-ink font-sans;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  ::selection {
+    background: rgba(169, 133, 72, 0.28);
+    color: #1c1a17;
+  }
+
+  :focus-visible {
+    outline: 1px solid #a98548;
+    outline-offset: 3px;
+  }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #f5f0e8; }
+  ::-webkit-scrollbar-thumb { background: #d8d0c3; border: 3px solid #f5f0e8; border-radius: 8px; }
+}
+
+@layer components {
+  /* wide-tracked micro label — Jost uppercase, the brand's secondary voice */
+  .label-luxe {
+    @apply font-sans uppercase;
+    font-size: 0.6875rem;
+    letter-spacing: 0.32em;
+    font-weight: 400;
+  }
+
+  /* hairline rules */
+  .hairline-b { border-bottom: 1px solid rgba(28, 26, 23, 0.14); }
+  .hairline-b-light { border-bottom: 1px solid rgba(245, 240, 232, 0.16); }
+
+  /* tabular figures for stats / metadata */
+  .tnum { font-variant-numeric: tabular-nums lining-nums; }
+
+  /* editorial link underline */
+  .link-line {
+    position: relative;
+  }
+  .link-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    opacity: 0.35;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.6s;
+  }
+  .link-line:hover::after,
+  .link-line[data-active="true"]::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}

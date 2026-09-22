@@ -1,0 +1,79 @@
+pageType: content
+background:
+  type: solid
+  color: "$cream"
+elements:
+  - elementId: label
+    elementType: text
+    bounds: [90, 84, 500, 24]
+    content:
+      fontSize: 15
+      fontFamily: Jost
+      letterSpacing: 4
+      color: "$muted"
+      wrap: false
+      align: [left, middle]
+      text: CONCEPT 04 — ATELIER EMBLEM
+  - elementId: ring-outer
+    elementType: shape
+    bounds: [310, 260, 460, 460]
+    shapeName: ellipse
+    border: {style: solid, width: 2, color: "$ink"}
+  - elementId: ring-inner
+    elementType: shape
+    bounds: [328, 278, 424, 424]
+    shapeName: ellipse
+    border: {style: solid, width: 0.75, color: "$ink"}
+  - elementId: ring-diamond-left
+    elementType: shape
+    bounds: [311, 482, 16, 16]
+    shapeName: diamond
+    fill: {type: solid, color: "$brass"}
+  - elementId: ring-diamond-right
+    elementType: shape
+    bounds: [753, 482, 16, 16]
+    shapeName: diamond
+    fill: {type: solid, color: "$brass"}
+  - elementId: top-diamond
+    elementType: shape
+    bounds: [526, 336, 28, 28]
+    shapeName: diamond
+    fill: {type: solid, color: "$brass"}
+  - elementId: wordmark
+    elementType: text
+    bounds: [340, 388, 400, 92]
+    content:
+      fontSize: 72
+      fontFamily: Oranienbaum
+      letterSpacing: 6
+      color: "$ink"
+      wrap: false
+      align: [center, middle]
+      text: ANVÉ
+  - elementId: rule
+    elementType: shape
+    bounds: [470, 502, 140, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$brass"}
+  - elementId: sub
+    elementType: text
+    bounds: [340, 520, 400, 30]
+    content:
+      fontSize: 20
+      fontFamily: Jost
+      letterSpacing: 10
+      color: "$ink"
+      wrap: false
+      align: [center, middle]
+      text: DESIGNS
+  - elementId: sub2
+    elementType: text
+    bounds: [340, 562, 400, 20]
+    content:
+      fontSize: 12
+      fontFamily: Jost
+      letterSpacing: 4
+      color: "$muted"
+      wrap: false
+      align: [center, middle]
+      text: FURNITURE · INTERIORS

@@ -1,0 +1,26 @@
+version: v2
+title: ANVÉ Designs — Logo Concepts
+size: [1080, 1080]
+customFonts:
+  - family: Oranienbaum
+    src: "https://statics.kimi.ai/neo-design-static/p-font/Oranienbaum.ttf"
+  - family: Marcellus
+    src: "https://fonts.googleapis.com/css2?family=Marcellus"
+  - family: Jost
+    src: "https://fonts.googleapis.com/css2?family=Jost"
+  - family: Archivo Black
+    src: "https://fonts.googleapis.com/css2?family=Archivo+Black"
+theme:
+  colors:
+    ink: "#1C1A17"
+    cream: "#F5F0E8"
+    brass: "#A98548"
+    terra: "#C0654A"
+    greige: "#EAE4DB"
+    muted: "#8C8577"
+pages:
+  - pages/1_serif.page
+  - pages/2_monogram.page
+  - pages/3_modern.page
+  - pages/4_emblem.page
+  - pages/5_overview.page
